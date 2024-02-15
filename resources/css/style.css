@@ -1,0 +1,101 @@
+/******************** COLORS *************************/
+
+:root {
+  --primary: #ffffff;
+  --secondary: #000000;
+  --light-blue: #B4D0E7;
+  --blue: #0061FF;
+  --box-light-green: #A2D39B;
+  --box-light-purple: #61082B;
+  --box-light-blue: #0093CE;
+  --box-light-light-red: #FF1C1C;
+  --box-light-dark-red: #D5001F;
+  --box-light-dark-ciano: #B4D0E7;
+  --box-light-dark-blue: #0D2481;
+  --box-light-dark-yellow: #FFD830;
+  --call-to-action: #B4D0E7;
+}
+
+.color-primary {
+  color: var(--primary);
+}
+
+.background-color-primary {
+  background-color: var(--primary);
+}
+
+.color-secondary {
+  color: var(--secondary);
+}
+
+.background-color-secondary {
+  background-color: var(--secondary);
+}
+
+.color-light-blue {
+  color: var(--light-blue);
+}
+
+.background-color-light-blue {
+  background-color: var(--light-blue);
+}
+
+.color-blue {
+  color: var(--blue);
+}
+
+.background-color-blue {
+  background-color: var(--blue);
+}
+
+.background-color-box-light-green {
+  background-color: var(--box-light-green);
+}
+
+.background-color-box-light-purple {
+  background-color: var(--box-light-purple);
+}
+
+.background-color-box-light-blue {
+  background-color: var(--box-light-blue);
+}
+
+.background-color-box-light-light-red {
+  background-color: var(--box-light-light-red);
+}
+
+.background-color-box-light-dark-red {
+  background-color: var(--box-light-dark-red);
+}
+
+.background-color-box-light-dark-ciano {
+  background-color: var(--box-light-dark-ciano);
+}
+
+.background-color-box-light-dark-blue {
+  background-color: var(--box-light-dark-blue);
+}
+
+.background-color-box-light-dark-yellow {
+  background-color: var(--box-light-dark-yellow);
+}
+
+.color-call-to-action {
+  color: var(--call-to-action);
+}
+
+.background-color-call-to-action {
+  background-color: var(--call-to-action);
+}
+
+/*************** DOCUMENT ***********************/
+
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  color: var(--secondary);
+}
+
+a:hover {
+  text-decoration: underline;
+}
