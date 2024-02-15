@@ -232,6 +232,14 @@ ul {
   min-width: 300px;
 }
 
+.min-height-200 {
+  min-height: 200px;
+}
+
+.min-width-200 {
+  min-width: 200px;
+}
+
 /*** Dimension % ****/
 
 .width-100x100 {

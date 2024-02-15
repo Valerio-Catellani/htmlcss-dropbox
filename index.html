@@ -49,7 +49,7 @@
 
   <main class="background-color-primary">
 
-
+    <!-- SECTION HERO -->
     <section id="hero" class="background-color-light-blue">
       <div id="hero-container" class="container-1200 margin-x-auto position-relative">
 
@@ -80,11 +80,12 @@
     </section>
     <!-- Bonus: possibile Animazione di scorrimento verso il basso-->
 
-
-    <section id="plans" class="container-1000 margin-x-auto">
+    <!---SECTION PLANS-->
+    <section id="plans" class="container-1000">
 
       <h2 class="font-size-em-250">Trova il piano business che fa per te</h2>
 
+      <!--- Avrei potuto inserire direttamente un radio-button mediante input, ma non avendoli ancora visti ho preferito utilizzare solo le conoscenze attuali.-->
       <div class="checkbox display-flex flex-wrap">
         <div class="display-flex align-items-center flex-wrap">
           <div class="circle background-color-primary pointer">
@@ -100,9 +101,10 @@
 
       <div class="display-flex gap-30 justify-content-space-between flex-wrap">
 
+        <!--SECTION: PLANS fist column-->
         <div class="vertical-plan min-width-300 ">
 
-          <span class="display-block text-align-center padding-5"><i
+          <span class="display-block text-align-center padding-10"><i
               class="fa-solid fa-user font-size-em-150 color-secondary"></i>Singolo
           </span>
 
@@ -128,18 +130,19 @@
           </div>
         </div>
 
+        <!--SECTION: PLANS second column-->
         <div class="vertical-plan min-width-300 ">
 
-          <span class="display-block text-align-center padding-5"><i
-              class="fa-solid fa-user font-size-em-150 color-secondary"></i>Advanced
+          <span class="display-block text-align-center padding-10"><i
+              class="fa-solid fa-users font-size-em-150 color-secondary"></i>Team
           </span>
 
           <div class="content-plan padding-30">
-            <h3 class="font-size-em-175">Professional</h3>
+            <h3 class="font-size-em-175">Advanced</h3>
             <h4>€ 18.00</h4>
             <p class="grey">/utente/mese</p>
             <ul>
-              <li class="li-user display-flex align-content-flex-start">3 o più contatti</li>
+              <li class="li-team display-flex align-content-flex-start">3 o più utenti</li>
               <li class="li-folder display-flex align-content-flex-start">Tutto lo spazio di cuoi ha bisogno il tuo team
               </li>
               <li class="li-share display-flex align-content-flex-start">Sofisticate funzioni di controllo e per tenere
@@ -162,22 +165,55 @@
           </div>
         </div>
 
+        <!--SECTION: PLANS third column-->
+        <div class="vertical-plan min-width-300 ">
 
+          <span class="display-block text-align-center padding-10"><i
+              class="fa-solid fa-building font-size-em-150 color-secondary"></i>Azienda
+          </span>
 
-        <div class="vertical-plan min-width-300">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi,
-          architecto,
-          nostrum voluptatum quidem dolores placeat officia, earum autem dolorum sapiente dolor tenetur dolorem
-          corporis blanditiis ut rerum deserunt! At tenetur quasi hic eius! Magni assumenda quos, odit cum ad esse!
+          <div class="content-plan padding-30">
+            <h3 class="font-size-em-175">Enterprise</h3>
+            <h4>Contattaci</h4>
+            <p class="display-hidden">mark</p>
+            <ul>
+              <li class="li-user display-flex align-content-flex-start">10 o più utenti</li>
+              <li class="li-folder display-flex align-content-flex-start">Soluzioni personalizzabili per la tua azienda
+              </li>
+              <li class="li-share display-flex align-content-flex-start">Assiestenza personalizzata per aiutare gli
+                amministratori in una gestione su larga scala</li>
+            </ul>
+            <div class="button-blue text-align-center">Contattaci</div>
+            <p>oppure <a href="www.google.it">acquista ora</a></p>
+            <div class="space-bar"></div>
+            <h4>Punti Salienti del piano</h4>
+            <ul>
+              <li class="li-check display-flex align-content-flex-start">Cartelle offline su dispositivi mobili</li>
+              <li class="li-check display-flex align-content-flex-start">Servizio assiestenza 24/h</li>
+              <li class="li-check display-flex align-content-flex-start">Possibilità di personalizzazione totale
+              </li>
+            </ul>
+          </div>
         </div>
-        <div class="vertical-plan min-width-300">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi,
-          architecto,
-          nostrum voluptatum quidem dolores placeat officia, earum autem dolorum sapiente dolor tenetur dolorem
-          corporis blanditiis ut rerum deserunt! At tenetur quasi hic eius! Magni assumenda quos, odit cum ad esse!
-        </div>
-        <div class="orizzontal-plan width-100x100">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi,
-          architecto,
-          nostrum voluptatum quidem dolores placeat officia, earum autem dolorum sapiente dolor tenetur dolorem
-          corporis blanditiis ut rerum deserunt! At tenetur quasi hic eius! Magni assumenda quos, odit cum ad esse!
+
+        <!--SECTION: PLANS 4th (orizzontal) column-->
+        <div class="orizzontal-plan width-100x100">
+          <span class="display-block text-align-center padding-10"><i
+              class="fa-solid fa-building font-size-em-150 color-secondary"></i>Team
+          </span>
+          <div class="content-plan padding-30 display-flex flex-wrap">
+            <div class="width-70x100">
+              <h3 class="font-size-em-175">Enterprise</h3>
+              <h4>Contatta l'ufficio vendite per i prezzi </h4>
+              <p>Soluzioni personalizzate e supporto su misura per aiutare i professionisti IT nella gestione su
+                qualsiasi scala</p>
+            </div>
+            <div class="button-blue text-align-center width-30x100 align-self-flex-start min-width-200">Contatta
+              l'ufficio vendite
+            </div>
+
+          </div>
+
         </div>
 
       </div>
