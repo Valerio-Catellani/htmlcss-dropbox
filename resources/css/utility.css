@@ -240,6 +240,8 @@ ul {
   min-width: 200px;
 }
 
+
+
 /*** Dimension % ****/
 
 .width-100x100 {
@@ -460,6 +462,10 @@ ul {
 
 .text-uppercase {
   text-transform: uppercase;
+}
+
+.text-underline {
+  text-decoration: underline;
 }
 
 

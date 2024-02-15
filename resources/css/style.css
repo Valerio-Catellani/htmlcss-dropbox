@@ -104,6 +104,10 @@ body {
   cursor: pointer;
 }
 
+.button-blue:hover {
+  background-color: var(--box-light-blue);
+}
+
 .margin-top-bottom-20 {
   margin: 20px 0;
 }
@@ -111,7 +115,7 @@ body {
 
 /*************** HEADER ***********************/
 
-a:hover {
+a:not(.start):hover {
   text-decoration: underline;
 }
 
@@ -197,9 +201,7 @@ h1 {
   border: grey solid 1px;
 }
 
-#plans a {
-  text-decoration: underline;
-}
+
 
 .content-plan>*,
 #plans ul li {
@@ -280,7 +282,7 @@ h1 {
   border: var(--secondary) solid 1px;
 }
 
-/************************* SECTION: OPERATION **************/
+/************************* SECTION: OPERATIONs **************/
 
 .operation-card {
   width: calc((100% - 40px) / 3);
@@ -288,4 +290,10 @@ h1 {
 
 #operations h2 {
   margin: 0 10px 30px 10px;
+}
+
+/************************* SECTION: COMMUNITY **************/
+
+#community h2 {
+  margin-bottom: 70px;
 }
