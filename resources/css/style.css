@@ -112,7 +112,8 @@ a:hover {
 header {
   height: 70px;
   top: 0;
-  left: 0
+  left: 0;
+  z-index: 1000;
 }
 
 .log-in {
@@ -124,6 +125,10 @@ header {
 /* main {
   margin-top: 70px;
 } */
+
+main section:not(#hero) {
+  padding: 150px 10px
+}
 
 /***** HERO ***********/
 
@@ -145,4 +150,39 @@ p {
 #hero-container .button-blue {
   margin-bottom: 30px;
   padding: 10px 20px;
+}
+
+/***** SECTION: PLANS ***********/
+
+.vertical-plan,
+.orizzontal-plan,
+.circle {
+  border: grey solid 1px;
+}
+
+.circle {
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+
+  margin: 10px 0;
+}
+
+.circle:hover {
+  border-radius: 50%;
+  border: blue solid 4px;
+}
+
+.checkbox>div {
+  margin-right: 50px
+}
+
+#plans h2,
+#plans>div {
+  margin-bottom: 40px;
+}
+
+.vertical-plan {
+  width: calc((100% - 60px) / 3);
+  border: grey solid 1px;
 }
