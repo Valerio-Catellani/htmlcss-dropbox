@@ -96,6 +96,13 @@ body {
   color: var(--secondary);
 }
 
+.button-blue {
+  padding: 5px 15px;
+  background-color: var(--blue);
+  color: var(--primary);
+}
+
+
 /*************** HEADER ***********************/
 
 a:hover {
@@ -114,6 +121,28 @@ header {
 
 /*************** MAIN ***********************/
 
-main {
+/* main {
   margin-top: 70px;
+} */
+
+/***** HERO ***********/
+
+#hero-container {
+  padding: 0 10px;
+  top: 160px;
+}
+
+h1 {
+  font-weight: 900;
+}
+
+#hero-container div:not(.button-blue),
+h1,
+p {
+  padding-bottom: 30px;
+}
+
+#hero-container .button-blue {
+  margin-bottom: 30px;
+  padding: 10px 20px;
 }
