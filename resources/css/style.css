@@ -145,8 +145,8 @@ h1 {
 }
 
 #hero-container div:not(.button-blue),
-h1,
-p {
+#hero-container h1,
+#hero-container p {
   padding-bottom: 30px;
 }
 
@@ -216,7 +216,7 @@ p {
 
 .space-bar {
   width: 60px;
-  margin-bottom: 60px;
+  margin: 60px 0;
   border-bottom: grey solid 1px;
 }
 
@@ -273,7 +273,19 @@ p {
 }
 
 /************************* SECTION: PARTNERS **************/
+
 .button-transparent {
   padding: 10px;
+  margin: 10px 0;
   border: var(--secondary) solid 1px;
+}
+
+/************************* SECTION: OPERATION **************/
+
+.operation-card {
+  width: calc((100% - 40px) / 3);
+}
+
+#operations h2 {
+  margin: 0 10px 30px 10px;
 }
