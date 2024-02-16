@@ -498,19 +498,19 @@ header .menu-index:not(.start>a):hover {
 /*colorazione delle voci del menu quando ci passo sopra*/
 
 /* box - animation & padding to fix the position of the box */
-.menu-list a:hover .fa-box {
+.menu-list a:hover .first-icon {
   display: none;
 }
 
-.menu-list a:hover .fa-box-open {
+.menu-list a:hover .second-icon {
   display: block;
 }
 
-.menu-list .fa-box {
+.menu-list .first-icon {
   padding: 10px 48px 10px 0;
 }
 
-.menu-list .fa-box-open {
+.menu-list .second-icon {
   padding: 10px 24px 10px 0;
 }
 
