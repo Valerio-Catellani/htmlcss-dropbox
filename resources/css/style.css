@@ -147,15 +147,9 @@ header {
   padding-bottom: 5px;
 }
 
-header li a {
-  height: 70px;
-  line-height: 70px;
-  display: inline-block;
-}
 
-header li a:not(.start>a):hover {
-  border-bottom: var(--border) solid 2px;
-}
+
+/* BONUS: ombreggiatura menù*/
 
 
 /*************** MAIN ***********************/
@@ -451,4 +445,149 @@ footer .space-bar {
 }
 
 
-/************************* test ***********************/
+/************************* BONUSES ***********************/
+
+
+header .menu-index {
+  padding: calc((70px - 22px) / 2) 10px;
+}
+
+
+/*dimensionato in mod che gli elmenti "menu-index" siano 70px come la navbar, in modo da inserire l'ombreggiatura*/
+
+header .menu-index:not(.start>a):hover {
+  border-bottom: var(--border) solid 2px;
+}
+
+/*do l'effetto ombreggiatura a tutti gli elementi nella lista escludendo l'ultimo bottone */
+
+
+
+/* BONUS: menù a scorrimento + filtro*/
+
+.menu {
+  left: 0;
+  top: 70px;
+  display: none;
+}
+
+/*posiziono il menù in modo che compaia sotto alla voce selezionata e che sia invisibile finche non mi sposto sul elemento*/
+
+.menu-list {
+  width: 400px;
+  max-width: 400px;
+}
+
+.menu-list>* {
+  margin-left: 30px;
+}
+
+.menu-list a {
+  color: var(--secondary);
+}
+
+.menu-list a:hover .menu-option {
+  background-color: var(--call-to-action);
+}
+
+.menu-option {
+  margin: 5px 0 0 0;
+  border-radius: 20px;
+}
+
+/*colorazione delle voci del menu quando ci passo sopra*/
+
+/* box - animation & padding to fix the position of the box */
+.menu-list a:hover .fa-box {
+  display: none;
+}
+
+.menu-list a:hover .fa-box-open {
+  display: block;
+}
+
+.menu-list .fa-box {
+  padding: 10px 48px 10px 0;
+}
+
+.menu-list .fa-box-open {
+  padding: 10px 24px 10px 0;
+}
+
+
+.menu-list p {
+  opacity: 0;
+}
+
+@keyframes rapid-visibility {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+
+/*animation for text in the li of the scroll menu*/
+.menu-list a:hover div>div>p {
+  animation-name: rapid-visibility;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+
+
+/*black-filter and background generation for the menu*/
+header li:hover .menu-background,
+header li:hover .black-filter,
+header li:hover .menu {
+  display: block;
+}
+
+/*disable scroll menu when hovering black-filter*/
+header li .black-filter:hover {
+  display: none;
+}
+
+
+/*animation for the scroll menu*/
+header li:hover .menu-background {
+  animation: scroll-menu;
+  animation-duration: 0.4s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes scroll-menu {
+  from {
+    height: 0;
+  }
+
+  to {
+    height: 500px;
+  }
+}
+
+.menu-background {
+  display: none;
+  height: 200px;
+  background-color: #ffffff;
+  border-top: var(--border) solid 1px;
+  left: 0;
+  top: 70px;
+  cursor: default;
+  z-index: -1;
+}
+
+.black-filter {
+  display: none;
+  position: fixed;
+  top: 70px;
+  right: 0;
+  background-color: #000000;
+  opacity: 0.7;
+  width: 100%;
+  height: 100vh;
+  z-index: -2;
+}

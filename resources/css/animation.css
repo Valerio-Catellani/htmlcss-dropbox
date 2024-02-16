@@ -62,3 +62,21 @@ h1 {
   animation-duration: 2s;
   animation-fill-mode: forwards;
 }
+
+
+#sponsor .single-sponsor img {
+  animation-name: rotate-loop;
+  animation-duration: 4s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes rotate-loop {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}

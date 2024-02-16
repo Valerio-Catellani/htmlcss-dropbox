@@ -703,6 +703,10 @@ ul {
   cursor: pointer;
 }
 
+.cursor-normal {
+  cursor: default;
+}
+
 
 /*********************** OVERFLOW **********************/
 
