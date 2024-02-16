@@ -37,7 +37,7 @@
       <li class="display-inline padding-10"><a class="color-secondary" href="www.google.it">Contatta l'ufficio
           vendite</a></li>
       <li class="display-inline padding-10"><a class="color-secondary" href="www.google.it">Accedi</a></li>
-      <li class="dropbox-button display-inline background-color-blue color-primary"><a class="color-primary start"
+      <li class="dropbox-button display-inline background-color-blue color-primary start"><a class="color-primary "
           href="www.google.it">Inizia</a></li>
     </ul>
 
@@ -66,8 +66,7 @@
               Inizia la tua prova gratuita
             </div>
             <p>Annulla in qualsiasi momento</p>
-            <a class="color-secondary" href="#call-to-action"><i
-                class="fa-solid fa-arrow-down font-size-em-400 pointer"></i></a>
+            <a class="color-secondary" href="#plans"><i class="fa-solid fa-arrow-down font-size-em-400 pointer"></i></a>
           </div>
 
           <div class="width-70x100 min-width-400">
@@ -86,18 +85,27 @@
       <h2 class="font-size-em-250 padding-10">Trova il piano business che fa per te</h2>
 
       <!--- Avrei potuto inserire direttamente un radio-button mediante input, ma non avendoli ancora visti ho preferito utilizzare solo le conoscenze attuali.-->
-      <div class="checkbox display-flex flex-wrap padding-10">
-        <div class="display-flex align-items-center flex-wrap">
-          <div class="circle background-color-primary pointer">
-          </div>
-          <p class="padding-10">Fatturazione mensile</p>
-        </div>
-        <div class="display-flex align-items-center flex-wrap">
-          <div class="circle background-color-primary pointer">
-          </div>
-          <p class="padding-10">Fatturazione Annuale</p>
-        </div>
+
+
+      <div class="radio-button-container display-flex flex-wrap padding-10">
+
+        <label class="radio-container">
+          <input type="radio" name="opzione" value="month plan">
+          <span class="radiomark"></span>
+          Fatturazione Mensile
+        </label>
+
+        <label class="radio-container">
+          <input type="radio" name="opzione" value="year plan">
+          <span class="radiomark"></span>
+          Fatturazione Annuale
+        </label>
       </div>
+
+
+
+
+
 
       <div class="display-flex gap-30 justify-content-space-evenly flex-wrap padding-10">
 
@@ -336,7 +344,7 @@
 
       <!-- the central sponsor-->
       <div class="container-sponsor padding-40 background-color-box-light-grey">
-        <img class="width-60x100 min-width-200" src="resources/img/designit-black.svg">
+        <img class="width-60x100 min-width-100" src="resources/img/designit-black.svg" alt="Designit logo">
         <div class="space-bar"></div>
         <p>"I membri del nostro team lavorano costantemente in Paesi, fusi orari e uffici diversi. Ora molte soluzioni
           sono compatibili con queste esigenze, ma nessuna è facile quanto Dropbox e Dropbox Paper. Ora molte soluzioni

@@ -114,8 +114,10 @@ html {
 }
 
 .dropbox-button {
-  padding: 5px 15px;
+  padding: 15px;
   cursor: pointer;
+  width: 250px;
+  text-align: center;
 }
 
 .dropbox-button:hover {
@@ -130,7 +132,7 @@ html {
 
 /*************** HEADER ***********************/
 
-header a:not(.start):hover {
+header a:not(.start>a):hover {
   text-decoration: underline;
 }
 
@@ -142,8 +144,11 @@ header {
 }
 
 .start {
-  padding: 5px 15px
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
+
+
 
 /*************** MAIN ***********************/
 
@@ -171,7 +176,6 @@ h1 {
 
 #hero-container .dropbox-button {
   margin-bottom: 30px;
-  padding: 10px 20px;
 }
 
 /********* SECTION: PLANS **************/
@@ -182,28 +186,12 @@ h1 {
   border: var(--border) solid 1px;
 }
 
-#plans span {
+#plans span:not(.radio-button-container span) {
   border-bottom: var(--border) solid 1px;
 }
 
 #plans span .fa-solid {
   margin-right: 5px;
-}
-
-.circle {
-  height: 20px;
-  width: 20px;
-  border-radius: 50%;
-  margin: 10px 0;
-}
-
-.circle:hover {
-  border-radius: 50%;
-  border: blue solid 4px;
-}
-
-.checkbox>div {
-  margin-right: 50px
 }
 
 #plans h2,
@@ -237,6 +225,44 @@ h1 {
 
 .orizzontal-plan h4 {
   padding: 10px 0 30px 0;
+}
+
+/*************** SECTION:PLANS checkbox *****************/
+/*costruisco un cerchio sopra all'imput che verrà nascosto con "opacity:0", e gli assegno un certo stile quando esso avrà la classe checked.*/
+
+.radio-container {
+  display: inline-block;
+  position: relative;
+  padding-left: 35px;
+  margin: 12px 40px 12px 0;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.radio-container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.radiomark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  background-color: #fff;
+  border: 2px solid var(--border);
+  /* Colore del bordo del radio button */
+  border-radius: 50px;
+}
+
+.radio-container:hover input~.radiomark {
+  background-color: var(--box-light-ciano);
+}
+
+.radio-container input:checked~.radiomark {
+  border: blue solid 4px;
 }
 
 /*** LI ICON ****/
@@ -290,6 +316,7 @@ h1 {
 /************************* SECTION: PARTNERS **************/
 
 #partners .dropbox-button {
+  width: fit-content;
   padding: 10px;
   margin: 10px 0;
   border: var(--secondary) solid 1px;
@@ -407,3 +434,6 @@ footer a:hover {
   margin: 30px 0;
   padding-left: 10px;
 }
+
+
+/************************* test ***********************/
