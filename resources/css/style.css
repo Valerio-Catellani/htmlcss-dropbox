@@ -362,6 +362,7 @@ h1 {
 
 #faq>* {
   margin: 0 20px;
+  padding: 30px 0;
 }
 
 #faq h2 {
@@ -379,3 +380,30 @@ h1 {
 
 
 /************************* FOOOTER **************/
+
+footer {
+  padding: 50px 0 20px;
+}
+
+footer div h3 {
+  padding: 20px 0;
+}
+
+footer div ul li {
+  margin: 10px 0;
+}
+
+footer .space-bar {
+  width: 180px;
+  margin: 80px 0 40px;
+  border-bottom: var(--border) solid 1px;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+#lenguage>* {
+  margin: 30px 0;
+  padding-left: 10px;
+}
