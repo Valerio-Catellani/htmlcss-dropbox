@@ -169,7 +169,6 @@ main section {
 
 #hero-container {
   padding: 0 10px;
-  top: 160px;
 }
 
 h1 {
@@ -187,6 +186,12 @@ h1 {
 }
 
 /********* SECTION: PLANS **************/
+
+#plans {
+  padding-top: 70px;
+}
+
+/*serve per fare in modo che il titolo della sezione compaia una volta che clikko su la freccia nell'hero*/
 
 .vertical-plan,
 .orizzontal-plan,
@@ -235,7 +240,7 @@ h1 {
   padding: 10px 0 30px 0;
 }
 
-/*************** SECTION:PLANS checkbox *****************/
+/*************** SECTION:PLANS radio-button *****************/
 /*costruisco un cerchio sopra all'imput che verrà nascosto con "opacity:0", e gli assegno un certo stile quando esso avrà la classe checked.*/
 
 .radio-container {

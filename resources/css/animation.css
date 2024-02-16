@@ -1,0 +1,64 @@
+/**/
+
+.hero-image {
+  width: 0%;
+  animation-name: hero-img-restriction;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes hero-img-restriction {
+  from {
+    width: 0%;
+  }
+
+  to {
+    width: 70%;
+  }
+}
+
+.hero-description {
+  opacity: 0;
+  animation-name: appear;
+  animation-delay: 2s;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes appear {
+  from {
+    opacity: 0
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+
+#hero-container {
+  animation-name: jumbo-animation;
+  animation-delay: 3s;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+}
+
+
+@keyframes jumbo-animation {
+  from {
+    top: 0;
+    right: 0
+  }
+
+  to {
+    top: 160px;
+  }
+}
+
+h1 {
+  opacity: 0;
+  animation-name: appear;
+  animation-delay: 4s;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
