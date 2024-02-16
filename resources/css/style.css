@@ -456,7 +456,7 @@ header .menu-index {
 /*dimensionato in mod che gli elmenti "menu-index" siano 70px come la navbar, in modo da inserire l'ombreggiatura*/
 
 header .menu-index:not(.start>a):hover {
-  border-bottom: var(--border) solid 2px;
+  border-bottom: var(--border) solid 5px;
 }
 
 /*do l'effetto ombreggiatura a tutti gli elementi nella lista escludendo l'ultimo bottone */
@@ -504,10 +504,11 @@ header .menu-index:not(.start>a):hover {
 
 .menu-list a:hover .second-icon {
   display: block;
+  color: var(--blue);
 }
 
 .menu-list .first-icon {
-  padding: 10px 48px 10px 0;
+  padding: 10px 34px 10px 0;
 }
 
 .menu-list .second-icon {
@@ -565,14 +566,16 @@ header li:hover .menu-background {
   }
 
   to {
-    height: 500px;
+    height: 550px;
   }
 }
 
 .menu-background {
   display: none;
   height: 200px;
-  background-color: #ffffff;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0), var(--primary)), url(../img/screenshot/Boxes.jpg) center/cover no-repeat;
+  background-repeat: no-repeat;
+  background-position: 50%;
   border-top: var(--border) solid 1px;
   left: 0;
   top: 70px;
@@ -590,4 +593,9 @@ header li:hover .menu-background {
   width: 100%;
   height: 100vh;
   z-index: -2;
+}
+
+
+.option1:hover {
+  background-color: var(--call-to-action);
 }
