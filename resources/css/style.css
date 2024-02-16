@@ -5,14 +5,16 @@
   --secondary: #000000;
   --light-blue: #B4D0E7;
   --blue: #0061FF;
+  --border: rgb(168, 165, 165);
   --box-light-green: #A2D39B;
   --box-light-purple: #61082B;
   --box-light-blue: #0093CE;
   --box-light-light-red: #FF1C1C;
-  --box-light-dark-red: #D5001F;
-  --box-light-dark-ciano: #B4D0E7;
-  --box-light-dark-blue: #0D2481;
-  --box-light-dark-yellow: #FFD830;
+  --box-dark-red: #D5001F;
+  --box-light-ciano: #B4D0E7;
+  --box-dark-blue: #0D2481;
+  --box-dark-yellow: #FFD830;
+  --box-light-grey: #F5F5F5;
   --call-to-action: #B4D0E7;
 }
 
@@ -52,6 +54,10 @@
   background-color: var(--box-light-green);
 }
 
+.color-light-purple {
+  color: var(--box-light-purple);
+}
+
 .background-color-box-light-purple {
   background-color: var(--box-light-purple);
 }
@@ -60,24 +66,24 @@
   background-color: var(--box-light-blue);
 }
 
-.background-color-box-light-light-red {
+.background-color-box-light-red {
   background-color: var(--box-light-light-red);
 }
 
-.background-color-box-light-dark-red {
-  background-color: var(--box-light-dark-red);
+.background-color-box-dark-red {
+  background-color: var(--box-dark-red);
 }
 
-.background-color-box-light-dark-ciano {
-  background-color: var(--box-light-dark-ciano);
+.background-color-box-ciano {
+  background-color: var(--box-light-ciano);
 }
 
-.background-color-box-light-dark-blue {
-  background-color: var(--box-light-dark-blue);
+.background-color-box-dark-blue {
+  background-color: var(--box-dark-blue);
 }
 
-.background-color-box-light-dark-yellow {
-  background-color: var(--box-light-dark-yellow);
+.background-color-box-dark-yellow {
+  background-color: var(--box-dark-yellow);
 }
 
 .color-call-to-action {
@@ -88,6 +94,12 @@
   background-color: var(--call-to-action);
 }
 
+.background-color-box-light-grey {
+  background-color: var(--box-light-grey);
+}
+
+
+
 /*************** DOCUMENT ***********************/
 
 
@@ -97,15 +109,18 @@ body {
   font-size: 1em;
 }
 
-.button-blue {
+html {
+  scroll-behavior: smooth;
+}
+
+.dropbox-button {
   padding: 5px 15px;
-  background-color: var(--blue);
-  color: var(--primary);
   cursor: pointer;
 }
 
-.button-blue:hover {
+.dropbox-button:hover {
   background-color: var(--box-light-blue);
+  transition: 0.5s;
 }
 
 .margin-top-bottom-20 {
@@ -115,7 +130,7 @@ body {
 
 /*************** HEADER ***********************/
 
-a:not(.start):hover {
+header a:not(.start):hover {
   text-decoration: underline;
 }
 
@@ -126,7 +141,7 @@ header {
   z-index: 1000;
 }
 
-.log-in {
+.start {
   padding: 5px 15px
 }
 
@@ -148,13 +163,13 @@ h1 {
   font-weight: 900;
 }
 
-#hero-container div:not(.button-blue),
+#hero-container div:not(.dropbox-button),
 #hero-container h1,
 #hero-container p {
   padding-bottom: 30px;
 }
 
-#hero-container .button-blue {
+#hero-container .dropbox-button {
   margin-bottom: 30px;
   padding: 10px 20px;
 }
@@ -164,11 +179,11 @@ h1 {
 .vertical-plan,
 .orizzontal-plan,
 .circle {
-  border: grey solid 1px;
+  border: var(--border) solid 1px;
 }
 
 #plans span {
-  border-bottom: grey solid 1px;
+  border-bottom: var(--border) solid 1px;
 }
 
 #plans span .fa-solid {
@@ -198,10 +213,8 @@ h1 {
 
 .vertical-plan {
   width: calc((100% - 60px) / 3);
-  border: grey solid 1px;
+  border: var(--border) solid 1px;
 }
-
-
 
 .content-plan>*,
 #plans ul li {
@@ -212,14 +225,14 @@ h1 {
   margin: 30px 0;
 }
 
-#plans .button-blue {
+#plans .dropbox-button {
   padding: 12px 0;
 }
 
-.space-bar {
+#plans .space-bar {
   width: 60px;
   margin: 60px 0;
-  border-bottom: grey solid 1px;
+  border-bottom: var(--border) solid 1px;
 }
 
 .orizzontal-plan h4 {
@@ -276,10 +289,15 @@ h1 {
 
 /************************* SECTION: PARTNERS **************/
 
-.button-transparent {
+#partners .dropbox-button {
   padding: 10px;
   margin: 10px 0;
   border: var(--secondary) solid 1px;
+}
+
+#partners .dropbox-button:hover {
+  background-color: var(--border);
+  transition: 0.5s;
 }
 
 /************************* SECTION: OPERATIONs **************/
@@ -296,4 +314,48 @@ h1 {
 
 #community h2 {
   margin-bottom: 70px;
+}
+
+/************************* SECTION: SPONSOR **************/
+
+.container-sponsor {
+  width: calc(100% / 3);
+}
+
+.single-sponsor {
+  aspect-ratio: 1 / 1;
+}
+
+#sponsor .space-bar {
+  width: 180px;
+  margin: 40px 0;
+  border-bottom: var(--border) solid 1px;
+}
+
+.container-sponsor span {
+  margin-top: 30px;
+}
+
+
+.single-sponsor:hover {
+  border: 15px solid rgb(255, 255, 255, 0.3);
+  cursor: pointer;
+}
+
+
+
+
+#call-to-action {
+  padding: 100px 0;
+}
+
+#call-to-action .dropbox-button {
+  border: var(--border) solid 1px;
+  padding: 10px 50px;
+  margin: 20px 10px;
+}
+
+#call-to-action .dropbox-button:hover {
+  background-color: var(--border);
+  transition: 0.5s;
 }
