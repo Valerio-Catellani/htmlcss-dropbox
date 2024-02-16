@@ -599,3 +599,50 @@ header li:hover .menu-background {
 .option1:hover {
   background-color: var(--call-to-action);
 }
+
+
+/******************************MY BONUS: HELP CHAT************************************/
+#help {
+  z-index: 3;
+  right: 50px;
+  bottom: 25px;
+}
+
+#help img {
+  width: 310px;
+  height: 615px;
+  top: 33px;
+  right: 64px;
+}
+
+#help textarea {
+  width: 200px;
+  height: 300px;
+  resize: none;
+  margin-right: 120px;
+  border: none;
+}
+
+#help summary {
+  opacity: 0;
+  z-index: 3;
+  margin-bottom: 150px
+}
+
+#help p {
+  z-index: 3;
+  position: relative;
+  width: 100px;
+  height: 50px;
+  border-radius: 20px;
+  left: 46px;
+  bottom: 358px;
+}
+
+#help .fa-dropbox {
+  top: 0;
+  right: 0;
+  text-align: end;
+  font-size: 5em;
+  z-index: 2;
+}
