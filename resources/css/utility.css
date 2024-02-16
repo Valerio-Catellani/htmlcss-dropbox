@@ -248,6 +248,20 @@ ul {
   min-width: 100px;
 }
 
+/*** Scales ****/
+
+.aspect-ratio-1-1 {
+  aspect-ratio: 1 / 1;
+}
+
+.aspect-ratio-16-9 {
+  aspect-ratio: 16 / 9;
+}
+
+.aspect-ratio-4-3 {
+  aspect-ratio: 4 / 3;
+}
+
 
 
 
@@ -348,6 +362,9 @@ ul {
   object-fit: cover;
 }
 
+.filter-invert-100 {
+  filter: invert(100%);
+}
 
 /*********************** TEXT **********************/
 
