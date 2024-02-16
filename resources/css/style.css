@@ -316,7 +316,7 @@ h1 {
   margin-bottom: 70px;
 }
 
-/************************* SECTION: SPONSOR **************/
+/************************* SECTION: SPONSOR and CALL TO ACTION **************/
 
 .container-sponsor {
   width: calc(100% / 3);
@@ -343,8 +343,6 @@ h1 {
 }
 
 
-
-
 #call-to-action {
   padding: 100px 0;
 }
@@ -359,3 +357,25 @@ h1 {
   background-color: var(--border);
   transition: 0.5s;
 }
+
+/************************* SECTION: FAQ **************/
+
+#faq>* {
+  margin: 0 20px;
+}
+
+#faq h2 {
+  margin: 50px 20px;
+}
+
+#faq div {
+  padding: 30px 0;
+  border-top: var(--border) solid 1px;
+}
+
+#faq div:last-child {
+  border-bottom: var(--border) solid 1px;
+}
+
+
+/************************* FOOOTER **************/
