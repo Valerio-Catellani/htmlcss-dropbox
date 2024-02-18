@@ -130,6 +130,10 @@ html {
   transition: 0.5s;
 }
 
+.dropbox-border {
+  border: var(--border) solid 1px;
+}
+
 
 /*************** HEADER ***********************/
 
@@ -170,42 +174,16 @@ h1 {
 /*padding-top-70*/
 /*serve per fare in modo che il titolo della sezione compaia una volta che clikko su la freccia nell'hero*/
 
-.vertical-plan,
-.orizzontal-plan,
-.circle {
-  border: var(--border) solid 1px;
-}
+
 
 #plans span:not(.radio-button-container span) {
   border-bottom: var(--border) solid 1px;
 }
 
-#plans span .fa-solid {
-  margin-right: 5px;
-}
-
-#plans h2,
-#plans>div {
-  margin-bottom: 40px;
-}
-
 .vertical-plan {
   width: calc((100% - 60px) / 3);
-  border: var(--border) solid 1px;
 }
 
-.content-plan>*,
-#plans ul li {
-  margin: 15px 0;
-}
-
-#plans ul {
-  margin: 30px 0;
-}
-
-#plans .dropbox-button {
-  padding: 12px 0;
-}
 
 #plans .space-bar {
   width: 60px;
@@ -213,9 +191,6 @@ h1 {
   border-bottom: var(--border) solid 1px;
 }
 
-.orizzontal-plan h4 {
-  padding: 10px 0 30px 0;
-}
 
 /*************** SECTION:PLANS radio-button *****************/
 /*costruisco un cerchio sopra all'imput che verrà nascosto con "opacity:0", e gli assegno un certo stile quando esso avrà la classe checked.*/
@@ -307,9 +282,6 @@ h1 {
 
 #partners .dropbox-button {
   width: auto;
-  padding: 10px;
-  margin: 10px 0;
-  border: var(--secondary) solid 1px;
 }
 
 #partners .dropbox-button:hover {
@@ -323,15 +295,8 @@ h1 {
   width: calc((100% - 40px) / 3);
 }
 
-#operations h2 {
-  margin: 0 10px 30px 10px;
-}
-
 /************************* SECTION: COMMUNITY **************/
 
-#community h2 {
-  margin-bottom: 70px;
-}
 
 /************************* SECTION: SPONSOR and CALL TO ACTION **************/
 
@@ -341,30 +306,14 @@ h1 {
 
 #sponsor .space-bar {
   width: 180px;
-  margin: 40px 0;
   border-bottom: var(--border) solid 1px;
 }
-
-.container-sponsor span {
-  margin-top: 30px;
-}
-
 
 .single-sponsor:hover {
   border: 15px solid rgb(255, 255, 255, 0.3);
   cursor: pointer;
 }
 
-
-#call-to-action {
-  padding: 100px 0;
-}
-
-#call-to-action .dropbox-button {
-  border: var(--border) solid 1px;
-  padding: 10px 50px;
-  margin: 20px 10px;
-}
 
 #call-to-action .dropbox-button:hover {
   background-color: var(--border);
@@ -373,14 +322,9 @@ h1 {
 
 /************************* SECTION: FAQ **************/
 
-#faq>* {
-  margin: 0 20px;
-  padding: 30px 0;
-}
 
-#faq h2 {
-  margin: 50px 20px;
-}
+
+
 
 #faq div {
   padding: 30px 0;
@@ -403,18 +347,6 @@ h1 {
 /* quando restingo. la freccia siposizionerà sopra alla domanda*/
 
 /************************* FOOOTER **************/
-
-footer {
-  padding: 50px 0 20px;
-}
-
-footer div h3 {
-  padding: 20px 0;
-}
-
-footer div ul li {
-  margin: 10px 0;
-}
 
 footer .space-bar {
   width: 180px;
@@ -602,4 +534,16 @@ header li:hover .menu-background {
   right: -30px;
   top: 45px;
   width: 150px;
+}
+
+.help-banner h3 {
+  width: 150px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.help-banner p {
+  width: 150px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
 }
