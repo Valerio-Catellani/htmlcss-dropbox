@@ -324,10 +324,7 @@ h1 {
 
 
 
-
-
 #faq div {
-  padding: 30px 0;
   border-top: var(--border) solid 1px;
 }
 
@@ -403,6 +400,26 @@ header .menu-index:not(.start>a):hover {
   border-radius: 20px;
 }
 
+/*black-filter and background generation for the menu*/
+header li:hover .menu-background,
+header li:hover .black-filter,
+header li:hover .menu {
+  display: block;
+}
+
+/*disable scroll menu when hovering black-filter*/
+header li .black-filter:hover {
+  display: none;
+}
+
+/*animation for the scroll menu*/
+header li:hover .menu-background {
+  animation: scroll-menu;
+  animation-duration: 0.4s;
+  animation-fill-mode: forwards;
+}
+
+
 /* box - animation & padding to fix the position of the box */
 .menu-list a:hover .first-icon {
   display: none;
@@ -435,25 +452,8 @@ header .menu-index:not(.start>a):hover {
 
 
 
-/*black-filter and background generation for the menu*/
-header li:hover .menu-background,
-header li:hover .black-filter,
-header li:hover .menu {
-  display: block;
-}
-
-/*disable scroll menu when hovering black-filter*/
-header li .black-filter:hover {
-  display: none;
-}
 
 
-/*animation for the scroll menu*/
-header li:hover .menu-background {
-  animation: scroll-menu;
-  animation-duration: 0.4s;
-  animation-fill-mode: forwards;
-}
 
 
 .menu-background {
