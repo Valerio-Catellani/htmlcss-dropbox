@@ -286,7 +286,7 @@ h1 {
   font-size: 1.2em;
 }
 
-/************************* SECTION: PARTNERS **************/
+/*************************HOME: SECTION: PARTNERS **************/
 
 #partners .dropbox-button {
   width: auto;
@@ -308,18 +308,18 @@ h1 {
 
 /************************* SECTION: SPONSOR and CALL TO ACTION **************/
 
-.container-sponsor {
+#home .container-sponsor {
   width: calc(100% / 3);
 }
 
 
-.single-sponsor:hover {
+#home .single-sponsor:hover {
   border: 15px solid rgb(255, 255, 255, 0.3);
   cursor: pointer;
 }
 
 
-#call-to-action .dropbox-button:hover {
+#home #call-to-action .dropbox-button:hover {
   background-color: var(--border);
   transition: 0.5s;
 }
@@ -573,6 +573,11 @@ header li:hover .menu-background {
   opacity: 0.85;
 }
 
+#enterprise h2,
+#enterprise h1 {
+  font-family: "Rajdhani", sans-serif
+}
+
 
 /********** ENTERPRISE:SECURITY *********/
 .enterprise-card {
@@ -590,4 +595,31 @@ header li:hover .menu-background {
 
 .enterprise-card a:hover {
   text-decoration-color: inherit;
+}
+
+/********** ENTERPRISE:SPONSOR *********/
+
+
+/* #enterprise-sponsor .sponsor-container {
+  top: 0;
+  left: +150vh;
+}
+
+
+#enterprise-sponsor .sponsor-container:first-child {
+  animation: sponsor-scroll;
+  animation-duration: 6s;
+} */
+
+#enterprise .all-banners {
+  gap: 1200px
+}
+
+.all-banners {
+  left: 0;
+  animation: sponsor-scroll 60s infinite;
+}
+
+.min-width-1200 {
+  min-width: 1200px;
 }
