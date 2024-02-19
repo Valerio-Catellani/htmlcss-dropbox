@@ -17,6 +17,7 @@
   --box-light-grey: #F5F5F5;
   --call-to-action: #B4D0E7;
   --dropbox-box-color: rgb(174, 138, 102);
+  --banner-background-color: #FF8C19;
 }
 
 .color-primary {
@@ -107,6 +108,14 @@
   color: var(--dropbox-box-color);
 }
 
+.color-banner-background {
+  color: var(--banner-background-color);
+}
+
+.background-color-banner-background {
+  background-color: var(--banner-background-color);
+}
+
 
 
 /*************** DOCUMENT ***********************/
@@ -161,7 +170,7 @@ header {
 
 /*************** MAIN ***********************/
 
-main section {
+#home main section {
   margin: 10px auto 150px;
 }
 
@@ -534,4 +543,51 @@ header li:hover .menu-background {
   width: 150px;
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
+}
+
+
+
+/******************************** ENTERPRISE 
+*******************************************************************/
+
+.small-left-scroll {
+  position: relative;
+  left: 0;
+  transition: left 0.5s;
+}
+
+.trigger-scroll-arrow:hover .small-left-scroll {
+  left: 10px;
+}
+
+/********** ENTERPRISE:HERO *********/
+#enterprise #hero {
+  height: 600px;
+}
+
+#enterprise #hero img {
+  object-fit: cover;
+}
+
+.opacity-85x100 {
+  opacity: 0.85;
+}
+
+
+/********** ENTERPRISE:SECURITY *********/
+.enterprise-card {
+  width: calc((100% - 60px) / 4);
+  min-width: 200px;
+}
+
+.enterprise-card>* {
+  padding: 10px 0;
+}
+
+.enterprise-card a {
+  text-decoration-color: grey;
+}
+
+.enterprise-card a:hover {
+  text-decoration-color: inherit;
 }
